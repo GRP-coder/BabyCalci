@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">BabyCalci</string>
+    <string name="baby_calculator">BABY CALCULATOR</string>
+    <string name="_8">8</string>
+    <string name="_9">9</string>
+    <string name="_7">7</string>
+
+    <string name="_1">1</string>
+    <string name="_4">4</string>
+    <string name="_2">2</string>
+    <string name="clear">CLEAR</string>
+    <string name="_3">3</string>
+    <string name="bml">×</string>
+    <string name="bmi">-</string>
+    <string name="beq">=</string>
+    <string name="_6">6</string>
+    <string name="bpl">+</string>
+
+    <string name="bdiv">÷</string>
+    <string name="_5">5</string>
+    <string name="bdot">.</string>
+    <string name="_0">0</string>
+    <string name="result">0</string>
+</resources>
