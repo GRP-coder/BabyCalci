@@ -8,5 +8,7 @@
     <string name="students_login">Students Login</string>
     <string name="teachers_login">teachers Login</string>
     <string name="logo">logo</string>
+    <string name="e_mail">E-mail</string>
+    <string name="droidrush_quiz_app_for_avishkar_2020">Droidrush Quiz App for Avishkar 2020</string>
 
 </resources>
