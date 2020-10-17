@@ -47,7 +47,13 @@ public class AdminLoginActivity extends AppCompatActivity {
                     mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                                 @Override
                                 public void onComplete(@NonNull Task<AuthResult> task) {
-                                    
+                                   if (email.length()==0){
+                                       Toast.makeText(AdminLoginActivity.this, "Email is empty", Toast.LENGTH_SHORT).show();
+                                   }
+                                    if (password.length()==0){
+                                        Toast.makeText(AdminLoginActivity.this, "Password Cannot be empty", Toast.LENGTH_SHORT).show();
+                                    }
+
                                     if (task.isSuccessful()) {
                                         Toast.makeText(AdminLoginActivity.this, "Login Succesful", Toast.LENGTH_SHORT).show();
                                        startActivity(new Intent(getApplicationContext(),AdminControl.class));
