@@ -24,7 +24,7 @@ public class AdminLoginActivity extends AppCompatActivity {
     String email, password;
     Button login;
 
-
+    Button stdentlogb, teacherlogb;
 
 
     @Override
@@ -66,7 +66,25 @@ public class AdminLoginActivity extends AppCompatActivity {
                     }
 
             });
-        }
+        stdentlogb = findViewById(R.id.studentlb);
+        teacherlogb = findViewById(R.id.tchrlogb);
+        teacherlogb.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),TeacherLogIn.class));
+
+            }
+        });
+        stdentlogb.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),StudentLogIn.class));
+
+            }
+        });
     }
+
+}
+
 
 
